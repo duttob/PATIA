@@ -1,0 +1,52 @@
+(define (problem sokoban-basic)
+  (:domain sokoban)
+  (:objects 
+    p - player
+    x0 x1 x2 x3 x4 y0 y1 y2 y3 y4 y5 y6 y7 - coords         
+  )
+  
+  (:init
+    (above y0 y1)
+	(above y1 y2)
+	(above y2 y3)
+	(above y3 y4)
+	(above y4 y5)
+	(above y5 y6)
+	(above y6 y7)
+	(right-of x1 x0)
+	(right-of x2 x1)
+	(right-of x3 x2)
+	(right-of x4 x3)
+    
+    (empty x0 y0)
+	(empty x2 y1)
+	(empty x3 y1)
+	(empty x1 y2)
+	(empty x2 y2)
+	(box-at x3 y2)
+	(empty x4 y2)
+	(empty x1 y3)
+	(player-at p x2 y3)
+	(box-at x3 y3)
+	(empty x4 y3)
+	(empty x2 y4)
+	(box-at x3 y4)
+	(empty x0 y5)
+	(empty x2 y5)
+	(empty x3 y5)
+	(empty x4 y5)
+	(empty x0 y6)
+	(empty x2 y6)
+	(empty x3 y6)
+	(empty x4 y6)
+	(empty x0 y7)
+  )
+  
+  (:goal 
+    (and
+(box-at x2 y3)
+	(box-at x2 y5)
+	(box-at x4 y5)
+)
+  )
+)

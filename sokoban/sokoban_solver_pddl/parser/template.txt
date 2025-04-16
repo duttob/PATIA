@@ -1,0 +1,17 @@
+(define (problem sokoban-basic)
+  (:domain sokoban)
+  (:objects 
+    p - player
+    {coords_objects} - coords         
+  )
+  
+  (:init
+    {coords_system}
+    
+    {map_info}
+  )
+  
+  (:goal 
+    {goal}
+  )
+)
