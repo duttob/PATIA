@@ -23,7 +23,7 @@ Aller dans le répertoire sokoban/sokoban_solver_pddl puis executer le script su
 
 `solve.sh` – Script de résolution Sokoban avec PDDL
 
-Ce script automatise le processus de génération de problème au format PDDL (fichiers pddl parsé retrouvable dans `sokoban/sokoban_solver_pddl/parsed_levels`) à partir d’un fichier `.json` (se trouvant dans `sokoban/config/`), puis résout ce problème en appelant un planificateur et affiche cette solution et lance l'application de visualisation pour cette solution.
+Ce script automatise le processus de génération de problème au format PDDL (fichiers pddl parsé retrouvable dans `sokoban/sokoban_solver_pddl/parsed_levels`) à partir d’un fichier `.json` (se trouvant dans `sokoban/config/`), puis résout ce problème en appelant un planificateur, affiche cette solution et lance l'application de visualisation pour cette solution.
 
 ## ▶️ Utilisation
 
