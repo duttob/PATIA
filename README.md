@@ -1,6 +1,8 @@
 # PATIA
 
+# TAQUIN
 
+Première implémentation du taquin, avec les algorithme de résolution A*, BFS et DFS. Les résultats des performances de ceux-ci sont présentés dans `taquin/execution_time.ipynb`
 
 # PDDL - HANOI
 
@@ -25,7 +27,7 @@ Aller dans le répertoire sokoban/sokoban_solver_pddl puis executer le script su
 
 Ce script automatise le processus de génération de problème au format PDDL (fichiers pddl parsé retrouvable dans `sokoban/sokoban_solver_pddl/parsed_levels`) à partir d’un fichier `.json` (se trouvant dans `sokoban/config/`), puis résout ce problème en appelant un planificateur, affiche cette solution et lance l'application de visualisation pour cette solution.
 
-## ▶️ Utilisation
+## Utilisation
 
 ```bash
 ./solve.sh <fichier-level.json>
