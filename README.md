@@ -8,7 +8,7 @@ L'execution du planificateur pour les tours d'hanoi se fait depuis le dossier `p
 
 # PDDL - TAQUIN
 
-Pour executer le planificateur sur le jeu du taquin, le script suivant est fournit :
+Pour tester le planificateur sur le jeu du taquin on se place dans le dossier `pddl/taquin` puis on execute le script suivant:
 
 `generate-solve.sh` – Script de résolution de taquin aléatoire de taille choisie avec PDDL
 ## Utilisation
