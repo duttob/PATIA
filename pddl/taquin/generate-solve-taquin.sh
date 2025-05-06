@@ -1,20 +1,18 @@
 #!/bin/bash
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m' 
+if [ -z "$1" ]; then
+  echo "Usage: generate-solve.sh <puzzle-size>"
+  exit 1
+fi
 
-log() {
-    local tag=$1
-    local color=$2
-    local message=$3
-    echo "${color}[${tag}]${NC} ${message}"
-}
+# Générer le puzzle
+python3 taquin_generator.py "$1"
 
-python3 taquin_generator.py $1
-log Solver $BLUE start solving ...
+if [ ! -f "generated.pddl" ]; then
+  echo "[Error] Generated PDDL file not created"
+  exit 1
+fi
 
-java -cp ../pddl4j-4.0.0.jar -server -Xms2048m -Xmx2048m fr.uga.pddl4j.planners.statespace.FF domain.pddl generated.pddl -t 1000
-
+echo "[Solver] Solving..."
+java -cp ../pddl4j-4.0.0.jar -server -Xms2048m -Xmx2048m \
+     fr.uga.pddl4j.planners.statespace.FF domain.pddl generated.pddl -t 1000
