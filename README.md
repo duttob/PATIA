@@ -4,6 +4,10 @@ Avant de lancer quelconque fonctionalités, lancer le script `setup.sh` de la ma
 ```bash
 sudo sh setup.sh
 ```
+Pour l'application web du sokoban, si le projet est executé depuis ssh. Initier la connection de la manière suivante : 
+```bash
+ssh -L 8888:localhost:8888 utilisateur@serveur
+```
 
 # TAQUIN
 
