@@ -1,5 +1,10 @@
 # PATIA
 
+Avant de lancer quelconque fonctionalités, lancer le script `setup.sh` de la manière suivante
+```bash
+sudo setup.sh
+```
+
 # TAQUIN
 
 Première implémentation du taquin, avec les algorithme de résolution A*, BFS et DFS. Les résultats des performances de ceux-ci sont présentés dans `taquin/execution_time.ipynb`
