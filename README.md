@@ -2,7 +2,7 @@
 
 Avant de lancer quelconque fonctionalités, lancer le script `setup.sh` de la manière suivante
 ```bash
-sudo setup.sh
+sudo sh setup.sh
 ```
 
 # TAQUIN
