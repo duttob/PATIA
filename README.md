@@ -11,7 +11,7 @@ ssh -L 8888:localhost:8888 utilisateur@serveur
 
 # TAQUIN
 
-Première implémentation du taquin, avec les algorithme de résolution A*, BFS et DFS. Les résultats des performances de ceux-ci sont présentés dans `taquin/execution_time.ipynb`
+Implémentation du taquin, avec les algorithme de résolution A*, BFS et DFS. Les résultats des performances de ceux-ci sont présentés dans `taquin/execution_time.ipynb`. Le générateur, le code du taquin et les graphiques de performances sont tout les trois dans le Notebook
 
 # PDDL - HANOI
 
