@@ -16,9 +16,9 @@ Implémentation du taquin, avec les algorithme de résolution A*, BFS et DFS ave
 ## Représentation du taquin
 On a choisit de représenter le taquin comme une liste d'entier de 0 à n² - 1. Le 0 étant la case vide.
 Ainsi le taquin suivant 
-1 2 3
-4 5 6
-7 8 0
+1 2 3\
+4 5 6\
+7 8 0\
 est représenté comme cela :
 [1 2 3 4 5 6 7 8 0]
 
