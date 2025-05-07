@@ -24,7 +24,7 @@ est représenté comme cela :
 
 # PDDL - HANOI
 
-L'execution du planificateur pour les tours d'hanoi se fait depuis le dossier `pddl` en lancant le script `pddl4j.sh`, en rentrant le domaine `pddl/hanoi/domain.pddl` et le problème `pddl/hanoi/4-disks.pddl`
+L'execution du planificateur pour les tours d'hanoi se fait depuis le dossier `pddl` en lancant le script `pddl4j.sh`, en rentrant le domaine `hanoi/domain.pddl` et le problème `hanoi/4-disks.pddl` ou `hanoi/3-disks.pddl`
 
 # PDDL - TAQUIN
 
