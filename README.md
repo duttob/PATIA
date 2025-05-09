@@ -49,6 +49,7 @@ Ce script automatise le processus de génération de problème au format PDDL (f
 
 ```bash
 ./solve.sh <fichier-level.json>
+```
 
 # SATPlanner
 Nous avons tenté d'implémenter le planner comme vu dans le cours, nous ne sommes pas capables de fournir des plans pour des problemes entiers mais certaines parties isolées de notre solution fonctionnent.
