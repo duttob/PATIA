@@ -79,7 +79,6 @@ public final class SATEncoding {
         final int nb_fluents = problem.getFluents().size();
         //System.out.println(" fluents = " + nb_fluents );
         final BitVector init = problem.getInitialState().getPositiveFluents();
-        System.out.println("problem init clauses indexes: " + init);
         for (int i = 0; i < nb_fluents; i++) {
             if (init.get(i)) {
                 initList.add(List.of(pair(i + 1, 1)));
