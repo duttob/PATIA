@@ -49,3 +49,24 @@ Ce script automatise le processus de génération de problème au format PDDL (f
 
 ```bash
 ./solve.sh <fichier-level.json>
+
+# SATPlanner
+Nous avons tenté d'implémenter le planner comme vu dans le cours, nous ne sommes pas capables de fournir des plans pour des problemes entiers mais certaines parties isolées de notre solution fonctionnent.
+
+## Ce que nous avons voulu faire :
+
+- encodage de l’état initial en clauses unitaires à partir de problem.getInitialState().getPositiveFluents()
+
+- génération des clauses de préconditions et d’effets non conditionnels via Condition et Effect
+
+- construction des frame axiomes pour la persistance des fluents d’une étape à l’autre
+
+- implémentation de la boucle incrémentale dans YetAnotherSATPlanner : instanciation du solver, ajout des clauses CNF, test SAT, extraction de modèle (cf. cours)
+
+## Soupçons de causes de dysfonctionnement :
+
+- pas certain de devoir encoder ou non les fluents négatifs initiaux
+
+- clause de disjonction d’actions incorrecte (unit clauses pour chaque action au lieu d’une clause « au moins une action »)
+
+- frame axiomes peut-être mal construites, laissant passer des transitions non souhaitées
